@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --canvas-fallback: #eceae3;
+  --canvas-base: #e9e7e0;
+  --ink-primary: #0f172a;
+  --ink-body: #334155;
+  --ink-muted: #475569;
+  --accent-gold: #92400e;
+  --accent-blue: #1e40af;
+  --accent-green: #065f46;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    font-family: "Times New Roman", Times, Georgia, serif;
+  }
+
+  html {
+    background-color: #eceae3;
+    color: #334155;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, Georgia, serif;
+    background-color: #e9e7e0;
+    color: #334155;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button,
+  input,
+  select,
+  textarea,
+  table,
+  th,
+  td {
+    font-family: "Times New Roman", Times, Georgia, serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Full-page bright Light-Only Metallic Gold & Silver canvas with Blue & Green atmospheric spills */
+.gold-luxury-canvas {
+  background-color: #e9e7e0;
+  background-attachment: fixed;
+  background-image:
+    radial-gradient(ellipse 50% 42% at 50% 36%, rgba(255, 255, 255, 0.68), transparent 68%),
+    radial-gradient(ellipse 62% 48% at 10% 8%, rgba(212, 175, 55, 0.30), transparent 70%),
+    radial-gradient(ellipse 54% 44% at 88% 12%, rgba(37, 99, 235, 0.16), transparent 65%),
+    radial-gradient(ellipse 52% 45% at 15% 84%, rgba(16, 185, 129, 0.15), transparent 68%),
+    radial-gradient(ellipse 58% 46% at 80% 76%, rgba(217, 165, 40, 0.24), transparent 72%),
+    linear-gradient(135deg, #e5e7ec 0%, #f3ebd3 36%, #e7eaef 68%, #efe4c4 100%);
+}
+
+/* Surface Tokens */
+.surface-silver-gold {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.93) 0%,
+    rgba(248, 248, 250, 0.90) 55%,
+    rgba(253, 248, 234, 0.92) 100%
+  );
+}
+
+.surface-blue-spill {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.92) 0%,
+    rgba(239, 246, 255, 0.92) 60%,
+    rgba(254, 249, 231, 0.88) 100%
+  );
+}
+
+.surface-green-spill {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.92) 0%,
+    rgba(236, 253, 245, 0.92) 60%,
+    rgba(254, 249, 231, 0.88) 100%
+  );
+}
+
+/* Light metallic scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1efe8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4b86a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b48a28;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

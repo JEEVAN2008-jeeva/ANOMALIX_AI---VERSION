@@ -1,0 +1,6 @@
+{
+  "name": "ANOMALIX AI",
+  "description": "AI-Powered Security Operations Center (SOC) Dashboard integrated with the ANOMALIX AI CrewAI multi-agent log anomaly investigation pipeline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

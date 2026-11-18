@@ -1,0 +1,25 @@
+[project]
+name = "anomalix_ai"
+version = "0.1.0"
+description = "anomalix_ai using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[file-processing,litellm,tools]>=1.15.41,<2.0.0",
+]
+
+[project.scripts]
+anomalix_ai = "anomalix_ai.main:run"
+run_crew = "anomalix_ai.main:run"
+train = "anomalix_ai.main:train"
+replay = "anomalix_ai.main:replay"
+test = "anomalix_ai.main:test"
+run_with_trigger = "anomalix_ai.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+project_id = "7ad8e288-9bb9-4b52-b41a-e6296addedad"
